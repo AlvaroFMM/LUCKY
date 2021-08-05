@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LUCKY.Master"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout Direction="Column" Margin="25,6">
+                <Label Text="Bienvendio" x:Name="lblemail" FontSize="18" FontFamily="Helvetica" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="3" Color="#fff"/>
+
+            </FlexLayout>
+          
+
+
+            <Button Text="Puntos de venta"  x:Name="btnAcerca" BackgroundColor="White" Image="ventaimg.png" Clicked="btnAcerca_Clicked"/>
+            <Button Text="Exit"  x:Name="btnSalir" BackgroundColor="White" Image="out.png" Clicked="btnSalir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

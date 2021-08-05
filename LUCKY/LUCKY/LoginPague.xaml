@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LUCKY.LoginPague"
+             Title="LoginPague">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="walpaper.jpg" Aspect="AspectFill" />
+            <BoxView Color="#c0699d" Opacity="0.8" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label TextType="Html" Margin="70" XAlign="Center">
+                    <Label.Text>
+                        &lt;h1&gt;APP GESTOR&lt;/h1&gt;&lt;br/&gt;Xplora
+                    </Label.Text>
+                </Label>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry x:Name="txtuser" Placeholder="Correo Electronico" PlaceholderColor="White"/>
+                    <Entry x:Name="txtpassword" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                    <Button x:Name="btningresar" Text="Iniciar Sesion" BackgroundColor="White" BorderRadius="20" TextColor="#c0699d" Clicked="btningresar_Clicked" />
+                    <Button x:Name="btnregistrar" Text="Registrar" BackgroundColor="White" BorderRadius="20" TextColor="#c0699d" Clicked="btnregistrar_Clicked" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
